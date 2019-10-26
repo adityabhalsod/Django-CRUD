@@ -34,7 +34,7 @@ def update(request,id):
             obj = crud.objects.get(id=id)
         except crud.DoesNotExist:
             obj = None
-            s
+
         return render(request,'edit.html',{'key':obj})
 
 # Delete method
