@@ -6,7 +6,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-Here, Django (base on Python) Create read update delete opreation 
+Here, Django (base on Python) Create read update delete operation 
 
 ## Installation
 
