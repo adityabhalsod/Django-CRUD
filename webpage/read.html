@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block contect %}
+{% include 'create.html' %}
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <th>id</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>x</th>
+        <th>y</th>
+    </tr>
+    <tr>
+        {% for x in key %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.first}}</td>
+            <td>{{x.last}}</td>
+            <td><a href="delete/{{x.id}}">delete</a></td>
+            <td><a href="update/{{x.id}}">update</a></td>
+        </tr>
+        {% endfor  %}
+    </tr>
+</table>
+{% endblock %}

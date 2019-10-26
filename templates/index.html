@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+Django CRUD | Create & Read & Delete
+{% endblock %}
+
+{% block body %}
+<center><h3>Create</h3></center>
+<form class="form-inline" action="create" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="firstname">Firstname</label>
+        <input type="text" name="first" class="form-control" style="width:30%;" required="required"/>
+        <label for="lastname">Lastname</label>
+        <input type="text" name="last" class="form-control" style="width:30%;" required="required"/>
+        <button type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-plus"></span> ADD</button>
+    </div>
+</form>
+<br />
+<center><h3>Read</h3></center>
+<table class="table table-bordered">
+    <thead class="alert-warning">
+        <tr>
+            <th>DB_ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for db in key %}
+        <tr>
+            <td>{{ db.id }}</td>
+            <td>{{ db.first }}</td>
+            <td>{{ db.last }}</td>
+            <td><center><a class="btn btn-sm btn-warning" href="update/{{ db.id }}"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a class="btn btn-sm btn-danger" href="delete/{{ db.id }}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

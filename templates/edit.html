@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+Django CRUD | Update
+{% endblock %}
+{% block body %}
+<center><h3>Update</h3></center>
+    <form class="form-inline" method="POST" action="/update/{{ key.id }}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="firstname">Firstname</label>
+            <input type="text" name="first" value="{{ key.first }}" required="required"/>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="last" value="{{ key.last }}" required="required"/>
+            <button type="submit" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-edit"></span> Update</button>
+        </div>
+    </form>
+{% endblock %}
