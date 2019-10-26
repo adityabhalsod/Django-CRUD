@@ -36,7 +36,7 @@ http://127.0.0.1
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [forks-shield]: https://img.shields.io/github/forks/AdityaBhalsod/Django-CRUD.svg?style=social
 [forks-url]: https://github.com/AdityaBhalsod/Django-CRUD
-[license-shield]: https://img.shields.io/github/license/AdityaBhalsod/Django-CRUD.svg?style=social
+[license-shield]: https://img.shields.io/github/license/AdityaBhalsod/Django-CRUD.svg?style=social&logo=apache
 [license-url]: https://github.com/AdityaBhalsod/Django-CRUD/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/aditya-bhalsod-494354152
