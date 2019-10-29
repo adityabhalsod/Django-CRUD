@@ -2,7 +2,7 @@
 
 [![Forks][forks-shield]][forks-url]
 [![Apache License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]  <a href="https://github.com/AdityaBhalsod/Django-CRUD/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AdityaBhalsod/Django-CRUD?style=social"></a> <img alt="GitHub followers" src="https://img.shields.io/github/followers/AdityaBhalsod?color=Black&label=Follow&style=social">
+[![LinkedIn][linkedin-shield]][linkedin-url]  <a href="https://github.com/AdityaBhalsod/Django-CRUD/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AdityaBhalsod/Django-CRUD?style=social"></a> <a href="https://github.com/AdityaBhalsod/Django-CRUD/"><img alt="GitHub followers" src="https://img.shields.io/github/followers/AdityaBhalsod?color=Black&label=Follow&style=social"></a>
 
 
 
