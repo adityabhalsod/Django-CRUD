@@ -1,9 +1,9 @@
 # Django-CRUD
 
-
 [![Forks][forks-shield]][forks-url]
 [![Apache License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]  <img alt="GitHub stars" src="https://img.shields.io/github/stars/AdityaBhalsod/Django-CRUD?style=social"> <img alt="GitHub followers" src="https://img.shields.io/github/followers/AdityaBhalsod?color=Black&label=Follow&style=social">
+
 
 
 Here, Django (base on Python) Create read update delete operation 
