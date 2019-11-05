@@ -39,4 +39,4 @@ http://127.0.0.1
 [license-shield]: https://img.shields.io/github/license/AdityaBhalsod/Django-CRUD.svg?style=flat&logo=apache
 [license-url]: https://github.com/AdityaBhalsod/Django-CRUD/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/aditya-bhalsod-494354152
+[linkedin-url]: https://linkedin.com/in/AdityaBhalsod/
