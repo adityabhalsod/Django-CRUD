@@ -1,0 +1,35 @@
+version: '3'
+ 
+volumes:
+  # static volume will be mounted to both nginx and django gunicorn services.
+  static_volume:
+  # postgres data volume will be mounted to postgres services
+  postgres_data:
+ 
+services:
+  django:
+    build:
+      context: .
+      # it points to the docker file which has instruction to build this service.
+      dockerfile: ./docker/django/dockerfile
+    # this command will execute after execution all build steps from './docker/django/dockerfile'
+    command: /gunicorn.sh
+    volumes:
+      - static_volume:/app/static
+    expose:
+      - "8000"
+    restart: always
+    env_file:
+      - ./docker/django/.django_local_env
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - static_volume:/app/static
+    links:
+      - django
+    restart: always
