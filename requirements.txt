@@ -1,3 +1,7 @@
-django==3.1.13
-gunicorn==20.0.4
-psycopg2==2.8.4
+asgiref==3.7.2
+backports.zoneinfo==0.2.1
+Django==4.2.9
+gunicorn==21.2.0
+packaging==23.2
+sqlparse==0.4.4
+typing_extensions==4.9.0
