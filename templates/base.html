@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+                {% block title %}
+                {% endblock %}
+        </title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+    </head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">By. Aditya Bhalsod</a>
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 class="text-primary">Python - <b>C</b>reat <b>R</b>ead <b>U</b>pdate <b>D</b>elete Application <br> With Django Framework</h3>
+        <hr style="border-top:1px dotted #000;"/>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
